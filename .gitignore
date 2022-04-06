@@ -1,0 +1,19 @@
+/.idea/
+/output/
+*.vscode
+codebuild_build.sh
+.DS_Store
+venv
+.venv
+*.iml
+coverage.out
+vendor
+/docs/
+/site/content/en/docs/Reference/agc*
+/dist/
+*.zip
+site/.hugo_build.lock
+# vi swap and temp files
+*.swp
+*.swo
+*~
