@@ -1,0 +1,350 @@
+Thu, 12 May 2022 12:38:20 -0700	SNAKEMAKE pid: 30
+Thu, 12 May 2022 12:38:20 -0700	[1]+  Running                 $ENGINE_RUN_CMD $ENGINE_PARAMS 2>&1 &
+Thu, 12 May 2022 12:38:20 -0700	waiting ..
+Thu, 12 May 2022 12:38:21 -0700	Building DAG of jobs...
+Thu, 12 May 2022 12:38:21 -0700	candidate job collect
+Thu, 12 May 2022 12:38:21 -0700	    wildcards:
+Thu, 12 May 2022 12:38:21 -0700	candidate job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=101
+Thu, 12 May 2022 12:38:21 -0700	selected job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=101
+Thu, 12 May 2022 12:38:21 -0700	file 101.sleep:
+Thu, 12 May 2022 12:38:21 -0700	    Producer found, hence exceptions are ignored.
+Thu, 12 May 2022 12:38:21 -0700	candidate job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=102
+Thu, 12 May 2022 12:38:21 -0700	selected job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=102
+Thu, 12 May 2022 12:38:21 -0700	file 102.sleep:
+Thu, 12 May 2022 12:38:21 -0700	    Producer found, hence exceptions are ignored.
+Thu, 12 May 2022 12:38:21 -0700	candidate job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=103
+Thu, 12 May 2022 12:38:21 -0700	selected job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=103
+Thu, 12 May 2022 12:38:21 -0700	file 103.sleep:
+Thu, 12 May 2022 12:38:21 -0700	    Producer found, hence exceptions are ignored.
+Thu, 12 May 2022 12:38:21 -0700	candidate job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=104
+Thu, 12 May 2022 12:38:21 -0700	selected job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=104
+Thu, 12 May 2022 12:38:21 -0700	file 104.sleep:
+Thu, 12 May 2022 12:38:21 -0700	    Producer found, hence exceptions are ignored.
+Thu, 12 May 2022 12:38:21 -0700	candidate job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=105
+Thu, 12 May 2022 12:38:21 -0700	selected job sleep
+Thu, 12 May 2022 12:38:21 -0700	    wildcards: seconds=105
+Thu, 12 May 2022 12:38:21 -0700	file 105.sleep:
+Thu, 12 May 2022 12:38:21 -0700	    Producer found, hence exceptions are ignored.
+Thu, 12 May 2022 12:38:21 -0700	selected job collect
+Thu, 12 May 2022 12:38:21 -0700	    wildcards:
+Thu, 12 May 2022 12:38:21 -0700	file None:
+Thu, 12 May 2022 12:38:21 -0700	    Producer found, hence exceptions are ignored.
+Thu, 12 May 2022 12:38:22 -0700	Using shell: /usr/bin/bash
+Thu, 12 May 2022 12:38:22 -0700	Provided cores: 10
+Thu, 12 May 2022 12:38:22 -0700	Rules claiming more threads will be scaled down.
+Thu, 12 May 2022 12:38:22 -0700	Job stats:
+Thu, 12 May 2022 12:38:22 -0700	job        count    min threads    max threads
+Thu, 12 May 2022 12:38:22 -0700	-------  -------  -------------  -------------
+Thu, 12 May 2022 12:38:22 -0700	collect        1              1              1
+Thu, 12 May 2022 12:38:22 -0700	sleep          5              8              8
+Thu, 12 May 2022 12:38:22 -0700	total          6              1              8
+Thu, 12 May 2022 12:38:22 -0700	Resources before job selection: {'_cores': 9223372036854775807, '_nodes': 10}
+Thu, 12 May 2022 12:38:22 -0700	Ready jobs (5):
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700	Select jobs to execute...
+Thu, 12 May 2022 12:38:22 -0700	Selected jobs (5):
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700		sleep
+Thu, 12 May 2022 12:38:22 -0700	Resources after job selection: {'_cores': 9223372036854775767, '_nodes': 5}
+Thu, 12 May 2022 12:38:22 -0700	[Thu May 12 19:38:22 2022]
+Thu, 12 May 2022 12:38:22 -0700	rule sleep:
+Thu, 12 May 2022 12:38:22 -0700	    output: 103.sleep
+Thu, 12 May 2022 12:38:22 -0700	    jobid: 3
+Thu, 12 May 2022 12:38:22 -0700	    reason: Missing output files: 103.sleep
+Thu, 12 May 2022 12:38:22 -0700	    wildcards: seconds=103
+Thu, 12 May 2022 12:38:22 -0700	    threads: 8
+Thu, 12 May 2022 12:38:22 -0700	    resources: tmpdir=/tmp, mem_mb=16384
+Thu, 12 May 2022 12:38:22 -0700	sleep 103 > 103.sleep
+Thu, 12 May 2022 12:38:22 -0700	AWS Batch job submitted with queue arn:aws:batch:us-east-1:940386191296:job-queue/snakemakeTaskBatchJobQue-7aiDUzjME0PE6kFP, jobId 78f30f22-2e1f-44e5-a144-1a4581998466 and tags {'AWS_BATCH_PARENT_JOB_ID': '69245718-06a0-4028-8ab4-e7890e10b5ee'}
+Thu, 12 May 2022 12:38:22 -0700	[Thu May 12 19:38:22 2022]
+Thu, 12 May 2022 12:38:22 -0700	rule sleep:
+Thu, 12 May 2022 12:38:22 -0700	    output: 105.sleep
+Thu, 12 May 2022 12:38:22 -0700	    jobid: 5
+Thu, 12 May 2022 12:38:22 -0700	    reason: Missing output files: 105.sleep
+Thu, 12 May 2022 12:38:22 -0700	    wildcards: seconds=105
+Thu, 12 May 2022 12:38:22 -0700	    threads: 8
+Thu, 12 May 2022 12:38:22 -0700	    resources: tmpdir=/tmp, mem_mb=16384
+Thu, 12 May 2022 12:38:22 -0700	sleep 105 > 105.sleep
+Thu, 12 May 2022 12:38:22 -0700	AWS Batch job submitted with queue arn:aws:batch:us-east-1:940386191296:job-queue/snakemakeTaskBatchJobQue-7aiDUzjME0PE6kFP, jobId 2672ecc9-8236-4d78-b4ff-4e2537dc7285 and tags {'AWS_BATCH_PARENT_JOB_ID': '69245718-06a0-4028-8ab4-e7890e10b5ee'}
+Thu, 12 May 2022 12:38:22 -0700	[Thu May 12 19:38:22 2022]
+Thu, 12 May 2022 12:38:22 -0700	rule sleep:
+Thu, 12 May 2022 12:38:22 -0700	    output: 101.sleep
+Thu, 12 May 2022 12:38:22 -0700	    jobid: 1
+Thu, 12 May 2022 12:38:22 -0700	    reason: Missing output files: 101.sleep
+Thu, 12 May 2022 12:38:22 -0700	    wildcards: seconds=101
+Thu, 12 May 2022 12:38:22 -0700	    threads: 8
+Thu, 12 May 2022 12:38:22 -0700	    resources: tmpdir=/tmp, mem_mb=16384
+Thu, 12 May 2022 12:38:22 -0700	sleep 101 > 101.sleep
+Thu, 12 May 2022 12:38:22 -0700	AWS Batch job submitted with queue arn:aws:batch:us-east-1:940386191296:job-queue/snakemakeTaskBatchJobQue-7aiDUzjME0PE6kFP, jobId e5551fe9-30a7-4115-886f-e62cb33d6d31 and tags {'AWS_BATCH_PARENT_JOB_ID': '69245718-06a0-4028-8ab4-e7890e10b5ee'}
+Thu, 12 May 2022 12:38:22 -0700	[Thu May 12 19:38:22 2022]
+Thu, 12 May 2022 12:38:22 -0700	rule sleep:
+Thu, 12 May 2022 12:38:22 -0700	    output: 104.sleep
+Thu, 12 May 2022 12:38:22 -0700	    jobid: 4
+Thu, 12 May 2022 12:38:22 -0700	    reason: Missing output files: 104.sleep
+Thu, 12 May 2022 12:38:22 -0700	    wildcards: seconds=104
+Thu, 12 May 2022 12:38:22 -0700	    threads: 8
+Thu, 12 May 2022 12:38:22 -0700	    resources: tmpdir=/tmp, mem_mb=16384
+Thu, 12 May 2022 12:38:22 -0700	sleep 104 > 104.sleep
+Thu, 12 May 2022 12:38:22 -0700	AWS Batch job submitted with queue arn:aws:batch:us-east-1:940386191296:job-queue/snakemakeTaskBatchJobQue-7aiDUzjME0PE6kFP, jobId 571662d5-7603-43c3-8eb4-ce5a12a1f422 and tags {'AWS_BATCH_PARENT_JOB_ID': '69245718-06a0-4028-8ab4-e7890e10b5ee'}
+Thu, 12 May 2022 12:38:22 -0700	[Thu May 12 19:38:22 2022]
+Thu, 12 May 2022 12:38:22 -0700	rule sleep:
+Thu, 12 May 2022 12:38:22 -0700	    output: 102.sleep
+Thu, 12 May 2022 12:38:22 -0700	    jobid: 2
+Thu, 12 May 2022 12:38:22 -0700	    reason: Missing output files: 102.sleep
+Thu, 12 May 2022 12:38:22 -0700	    wildcards: seconds=102
+Thu, 12 May 2022 12:38:22 -0700	    threads: 8
+Thu, 12 May 2022 12:38:22 -0700	    resources: tmpdir=/tmp, mem_mb=16384
+Thu, 12 May 2022 12:38:22 -0700	sleep 102 > 102.sleep
+Thu, 12 May 2022 12:38:22 -0700	AWS Batch job submitted with queue arn:aws:batch:us-east-1:940386191296:job-queue/snakemakeTaskBatchJobQue-7aiDUzjME0PE6kFP, jobId 0c58c38d-96f3-45c5-b817-dc81d2b46b78 and tags {'AWS_BATCH_PARENT_JOB_ID': '69245718-06a0-4028-8ab4-e7890e10b5ee'}
+Thu, 12 May 2022 12:38:32 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:38:33 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:38:34 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:38:35 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:38:36 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:38:46 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:38:46 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:38:46 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:38:46 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:38:46 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:38:56 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:38:56 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:38:56 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:38:56 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:38:56 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:39:06 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:39:06 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:39:06 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:39:06 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:39:06 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:39:16 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:39:16 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:39:16 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:39:16 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:39:16 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:39:26 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:39:26 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:39:26 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:39:26 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:39:26 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:39:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:39:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:39:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:39:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:39:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:39:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:39:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:39:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:39:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:39:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:39:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:39:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:39:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:39:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:39:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:40:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:40:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:40:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:40:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:40:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:40:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:40:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:40:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:40:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:40:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:40:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:40:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:40:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:40:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:40:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:40:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:40:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:40:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:40:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:40:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:40:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:40:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:40:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:40:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:40:47 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:40:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466'} with status RUNNABLE
+Thu, 12 May 2022 12:40:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:40:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31'} with status RUNNABLE
+Thu, 12 May 2022 12:40:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:40:57 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:41:07 -0700	The log details is {'status': 'STARTING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status STARTING
+Thu, 12 May 2022 12:41:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:41:07 -0700	The log details is {'status': 'STARTING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status STARTING
+Thu, 12 May 2022 12:41:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:41:07 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:41:17 -0700	The log details is {'status': 'STARTING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status STARTING
+Thu, 12 May 2022 12:41:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:41:17 -0700	The log details is {'status': 'STARTING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status STARTING
+Thu, 12 May 2022 12:41:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:41:17 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:41:27 -0700	The log details is {'status': 'STARTING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status STARTING
+Thu, 12 May 2022 12:41:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:41:27 -0700	The log details is {'status': 'STARTING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status STARTING
+Thu, 12 May 2022 12:41:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:41:27 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:41:37 -0700	The log details is {'status': 'STARTING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status STARTING
+Thu, 12 May 2022 12:41:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:41:37 -0700	The log details is {'status': 'STARTING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status STARTING
+Thu, 12 May 2022 12:41:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:41:37 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:41:48 -0700	The log details is {'status': 'STARTING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status STARTING
+Thu, 12 May 2022 12:41:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:41:48 -0700	The log details is {'status': 'STARTING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status STARTING
+Thu, 12 May 2022 12:41:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:41:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:41:58 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:41:58 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:41:58 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:41:58 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:41:58 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:42:08 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:42:08 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:42:08 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:42:08 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:42:08 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:42:18 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:42:18 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:42:18 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:42:18 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:42:18 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:42:28 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:42:28 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:42:28 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:42:28 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:42:28 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:42:38 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:42:38 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:42:38 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:42:38 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:42:38 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:42:48 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:42:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:42:48 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:42:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:42:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:42:58 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:42:58 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:42:58 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:42:58 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:42:58 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:43:08 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:43:08 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:43:08 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:43:08 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:43:08 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:43:18 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:43:18 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:43:18 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:43:18 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:43:18 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:43:28 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:43:28 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285'} with status RUNNABLE
+Thu, 12 May 2022 12:43:28 -0700	The log details is {'status': 'RUNNING', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status RUNNING
+Thu, 12 May 2022 12:43:28 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:43:28 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:43:38 -0700	The log details is {'status': 'RUNNING', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status RUNNING
+Thu, 12 May 2022 12:43:38 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:43:38 -0700	The log details is {'status': 'SUCCEEDED', 'jobId': 'e5551fe9-30a7-4115-886f-e62cb33d6d31', 'logStreamName': 'snakemake_kdfj2ibj/default/3da1e911deec43bea512847602ec9528'} with status SUCCEEDED
+Thu, 12 May 2022 12:43:38 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:43:38 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:43:39 -0700	[Thu May 12 19:43:39 2022]
+Thu, 12 May 2022 12:43:39 -0700	Finished job 1.
+Thu, 12 May 2022 12:43:39 -0700	1 of 6 steps (17%) done
+Thu, 12 May 2022 12:43:48 -0700	The log details is {'status': 'SUCCEEDED', 'jobId': '78f30f22-2e1f-44e5-a144-1a4581998466', 'logStreamName': 'snakemake_kdfj2ibj/default/55631d04ff1e4602a3d1f18a4de55235'} with status SUCCEEDED
+Thu, 12 May 2022 12:43:48 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:43:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:43:48 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:43:49 -0700	[Thu May 12 19:43:49 2022]
+Thu, 12 May 2022 12:43:49 -0700	Finished job 3.
+Thu, 12 May 2022 12:43:49 -0700	2 of 6 steps (33%) done
+Thu, 12 May 2022 12:43:59 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:43:59 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422'} with status RUNNABLE
+Thu, 12 May 2022 12:43:59 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:44:09 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:44:09 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:44:09 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:44:19 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:44:19 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:44:19 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:44:29 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:44:29 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:44:29 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:44:39 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:44:39 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:44:39 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:44:49 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:44:49 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:44:49 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:44:59 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:44:59 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:44:59 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:45:09 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:45:09 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:45:09 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:45:19 -0700	The log details is {'status': 'RUNNING', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status RUNNING
+Thu, 12 May 2022 12:45:19 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:45:19 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:45:29 -0700	The log details is {'status': 'SUCCEEDED', 'jobId': '2672ecc9-8236-4d78-b4ff-4e2537dc7285', 'logStreamName': 'snakemake_kdfj2ibj/default/f867f2f464834bb58b929bcd617ce35f'} with status SUCCEEDED
+Thu, 12 May 2022 12:45:29 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:45:29 -0700	The log details is {'status': 'RUNNABLE', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78'} with status RUNNABLE
+Thu, 12 May 2022 12:45:29 -0700	[Thu May 12 19:45:29 2022]
+Thu, 12 May 2022 12:45:29 -0700	Finished job 5.
+Thu, 12 May 2022 12:45:29 -0700	3 of 6 steps (50%) done
+Thu, 12 May 2022 12:45:39 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:45:39 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:45:50 -0700	The log details is {'status': 'RUNNING', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status RUNNING
+Thu, 12 May 2022 12:45:50 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:46:00 -0700	The log details is {'status': 'SUCCEEDED', 'jobId': '571662d5-7603-43c3-8eb4-ce5a12a1f422', 'logStreamName': 'snakemake_kdfj2ibj/default/db2fed0c10ae497daf2c58b5495c6a6e'} with status SUCCEEDED
+Thu, 12 May 2022 12:46:00 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:46:00 -0700	[Thu May 12 19:46:00 2022]
+Thu, 12 May 2022 12:46:00 -0700	Finished job 4.
+Thu, 12 May 2022 12:46:00 -0700	4 of 6 steps (67%) done
+Thu, 12 May 2022 12:46:10 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:46:20 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:46:30 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:46:40 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:46:50 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:47:00 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:47:10 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:47:20 -0700	The log details is {'status': 'RUNNING', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status RUNNING
+Thu, 12 May 2022 12:47:30 -0700	The log details is {'status': 'SUCCEEDED', 'jobId': '0c58c38d-96f3-45c5-b817-dc81d2b46b78', 'logStreamName': 'snakemake_kdfj2ibj/default/1d1c929506b2420fb069dc2892478b26'} with status SUCCEEDED
+Thu, 12 May 2022 12:47:31 -0700	[Thu May 12 19:47:31 2022]
+Thu, 12 May 2022 12:47:31 -0700	Finished job 2.
+Thu, 12 May 2022 12:47:31 -0700	5 of 6 steps (83%) done
+Thu, 12 May 2022 12:47:31 -0700	Resources before job selection: {'_cores': 9223372036854775807, '_nodes': 10}
+Thu, 12 May 2022 12:47:31 -0700	Ready jobs (1):
+Thu, 12 May 2022 12:47:31 -0700		collect
+Thu, 12 May 2022 12:47:31 -0700	Select jobs to execute...
+Thu, 12 May 2022 12:47:31 -0700	Selected jobs (1):
+Thu, 12 May 2022 12:47:31 -0700		collect
+Thu, 12 May 2022 12:47:31 -0700	Resources after job selection: {'_cores': 9223372036854775806, '_nodes': 9}
+Thu, 12 May 2022 12:47:31 -0700	[Thu May 12 19:47:31 2022]
+Thu, 12 May 2022 12:47:31 -0700	localrule collect:
+Thu, 12 May 2022 12:47:31 -0700	    input: 101.sleep, 102.sleep, 103.sleep, 104.sleep, 105.sleep
+Thu, 12 May 2022 12:47:31 -0700	    jobid: 0
+Thu, 12 May 2022 12:47:31 -0700	    reason: Input files updated by another job: 104.sleep, 103.sleep, 105.sleep, 102.sleep, 101.sleep
+Thu, 12 May 2022 12:47:31 -0700	    resources: tmpdir=/tmp
+Thu, 12 May 2022 12:47:31 -0700	[Thu May 12 19:47:31 2022]
+Thu, 12 May 2022 12:47:31 -0700	Finished job 0.
+Thu, 12 May 2022 12:47:31 -0700	6 of 6 steps (100%) done
+Thu, 12 May 2022 12:47:31 -0700	shutting down
