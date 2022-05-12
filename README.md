@@ -1,5 +1,5 @@
-Snakemake Tutorial Deployed in AGC
-==================================
+Snakemake workflow with AGC
+===========================
 
 ```bash
 # assuming you have an active account
